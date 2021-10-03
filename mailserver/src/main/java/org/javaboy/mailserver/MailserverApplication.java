@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class MailserverApplication {
-
+//测试修改
     public static void main(String[] args) {
         SpringApplication.run(MailserverApplication.class, args);
     }
