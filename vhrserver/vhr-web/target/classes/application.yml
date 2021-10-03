@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password:
+    url: jdbc:mysql://localhost:3306/vhr?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 192.168.182.131
+    publisher-confirms: true  #开启setConfirmCallback回调  确认rabbitmq是否收到消息
+    publisher-returns: true   #开启setReturnCallback回调   确认队列是否收到消息      RbbitmqConfig
+  redis:
+    host: 127.0.0.1 #192.168.182.131
+    database: 0
+    port: 6379
+    password:
+  cache:
+    cache-names: menus_cache
+server:
+  port: 8081
+  compression:
+    enabled: true
+fastdfs:
+  nginx:
+    host: http://127.0.0.1/
